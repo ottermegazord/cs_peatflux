@@ -1,0 +1,65 @@
+'CR6 Series Datalogger
+'To create a different opening program template, type in new
+'instructions and select Template | Save as Default Template
+'date:
+'program author:
+
+'Declare Constants
+'Example:
+'CONST PI = 3.141592654 or Const PI = 4*ATN(1)
+Const SCAN_INTERVAL = 1 ' 1 Sec
+Const OUTPUT_INTERVAL = 1 ' 10 minutes
+Const a0= -0.0663
+Const a1= -0.0063
+Const a2= 0.0007
+Const high = true
+Const low = false
+
+'Declare Public Variables
+'Example:
+Public PTemp, batt_volt
+Public Period (12)
+Public VWC (12)
+Public Flag (1)
+Dim I
+
+'Declare Other Variables
+'Example:
+'Dim Counter
+
+'Define Data Tables.
+DataTable (Test,1,-1) 'Set table size to # of records, or -1 to autoallocate.
+	DataInterval (0,OUTPUT_INTERVAL,Min,-1)
+	Minimum (1,batt_volt,FP2,False,False)
+	Sample (1,PTemp,FP2)
+	Sample (12,Period(),FP2)
+	Sample (12,VWC(),FP2)
+EndTable
+
+'Define Subroutines
+'Sub
+	'EnterSub instructions here
+'EndSub
+
+'Main Program
+BeginProg
+	Scan (SCAN_INTERVAL,Sec,0,0)
+		PanelTemp (PTemp,15000)
+		Battery (batt_volt)
+		'Enter other measurement instructions
+		If IfTime (0, OUTPUT_INTERVAL, min) Then Flag (1) = high
+		If Flag (1) = high Then
+		  CS616 (Period(1),4,U1,C1,4,1.0,0)
+		  CS616 (Period(5),4,U5,C2,4,1.0,0)
+		  CS616 (Period(9),4,U9,C3,4,1.0,0)
+		  For I=1 To 12
+		    VWC(I) = a0 + a1*Period(I) + a2*Period(I)^2
+		  Next
+		  Flag(1) = low
+		EndIf
+		'Call Output Tables
+		'Example:
+		CallTable Test
+	NextScan
+EndProg
+

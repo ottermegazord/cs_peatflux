@@ -1,0 +1,58 @@
+'CR6 Series Datalogger
+
+'program author: ottermegazord
+
+'*** Constants ***
+Const SCAN_INTERVAL = 1 ' 1 Sec
+Const OUTPUT_INTERVAL = 1 ' 10 minutes
+
+'*** Port Assignments ***
+Const REL_HUM_SE_CH = U1 ' SE Channel on CR6
+Const T_DIFF_CH = U3
+Const WIND_PULSE_CH = U9
+
+'Declare Public Variables
+Public PTemp, batt_volt
+Units batt_volt = V
+Units PTemp = C
+Public wind_speed
+Units wind_speed = pulses
+
+Public rel_hum, Rs_Ro, T ' Relative Humidity and Temperature (HMP 155)
+Units rel_hum = mV
+Units T = C
+'Declare Other Variables
+'Example:
+'Dim Counter
+
+'Define Data Tables.
+DataTable (Nursery,TRUE,-1) 'Set table size to # of records, or -1 to autoallocate.
+	CardOut(0,-1)
+  DataInterval (0,OUTPUT_INTERVAL,Min,-1)
+	Minimum(1,batt_volt,FP2,False,False)
+	Average(1,PTemp,FP2,False)
+	Average(1,rel_hum, FP2, FALSE)
+	Average(1,T,FP2,FALSE)
+	Average(1,wind_speed,FP2,FALSE)
+EndTable
+
+'Define Subroutines
+'Sub
+	'EnterSub instructions here
+'EndSub
+
+'Main Program
+BeginProg
+	Scan(SCAN_INTERVAL,Sec,0,0)
+		PanelTemp(PTemp,250)
+		Battery(batt_volt)
+		VoltSe(rel_hum,1,mV5000,REL_HUM_SE_CH,True,0,_50Hz,1,0)
+		BrHalf4W(Rs_Ro,1,mV200,mV200,U3,U2,1,2200, True,True,0,15000,1.0,0)
+		PRTCalc(T,1,Rs_Ro,1, 1.0,0)
+		PulseCount(wind_speed,1,WIND_PULSE_CH,3,0,1.0,0)
+		'Enter other measurement instructions
+		'Call Output Tables
+		CallTable Nursery
+	NextScan
+EndProg
+

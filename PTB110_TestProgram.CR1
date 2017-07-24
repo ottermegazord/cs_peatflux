@@ -1,0 +1,25 @@
+'CR1000 Series Datalogger
+'Instrument: PTB110 Barometer
+'Program created in LoggerNet CRBasic
+'date: 6 October 2009
+'program author: Jan Ng
+
+'Declare Public Variables
+Public batt_volt
+Public AtmPress
+
+'Define Data Tables
+DataTable (AtmPress1Sec,True,-1)
+	DataInterval (0,15,Sec,0)
+	Sample (1, AtmPress, IEEE4)
+EndTable
+
+'Main Program
+BeginProg
+	Scan (1,Sec,1,0)
+		Battery (Batt_volt)
+		VoltSe (AtmPress, 1, mv2500, 1, True, 0, _50Hz, 1.0, 0.0)
+		CallTable (AtmPress1Sec)
+	NextScan
+EndProg
+

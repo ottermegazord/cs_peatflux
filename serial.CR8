@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+
+  <head>
+    <title>
+      serial.CR8 on PumpingSystemDesign – Attachment
+     – peatflux
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="search" href="/projects/peatflux/search" />
+        <link rel="help" href="/projects/peatflux/wiki/TracGuide" />
+        <link rel="alternate" href="/projects/peatflux/raw-attachment/wiki/PumpingSystemDesign/serial.CR8" title="Original Format" />
+        <link rel="up" href="/projects/peatflux/wiki/PumpingSystemDesign" title="PumpingSystemDesign" />
+        <link rel="start" href="/projects/peatflux/wiki" />
+        <link rel="stylesheet" href="/projects/peatflux/chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="/projects/peatflux/pygments/trac.css" type="text/css" /><link rel="stylesheet" href="/projects/peatflux/chrome/common/css/code.css" type="text/css" />
+        <link rel="shortcut icon" href="/projects/peatflux/chrome/site/peatflux.ico" type="image/x-icon" />
+        <link rel="icon" href="/projects/peatflux/chrome/site/peatflux.ico" type="image/x-icon" />
+      <link type="application/opensearchdescription+xml" rel="search" href="/projects/peatflux/search/opensearch" title="Search peatflux" />
+    <script type="text/javascript" src="/projects/peatflux/chrome/common/js/jquery.js"></script><script type="text/javascript" src="/projects/peatflux/chrome/common/js/babel.js"></script><script type="text/javascript" src="/projects/peatflux/chrome/common/js/messages/en_US.js"></script><script type="text/javascript" src="/projects/peatflux/chrome/common/js/trac.js"></script><script type="text/javascript" src="/projects/peatflux/chrome/common/js/search.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/projects/peatflux/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+      <script type="text/javascript" src="/projects/peatflux/chrome/common/js/folding.js"></script>
+      <script type="text/javascript">
+        jQuery(document).ready(function($) {
+          $('#preview table.code').enableCollapsibleColumns($('#preview table.code thead th.content'));
+        });
+      </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://censam.mit.edu/research/res5/index.html#sec2"><img src="/projects/peatflux/chrome/site/peatflux.png" alt="Harvey lab peatflux project" /></a>
+      </div>
+      <form id="search" action="/projects/peatflux/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first">logged in as fmkai</li><li><a href="/projects/peatflux/logout">Logout</a></li><li><a href="/projects/peatflux/wiki/TracGuide">Help/Guide</a></li><li><a href="/projects/peatflux/about">About Trac</a></li><li class="last"><a href="/projects/peatflux/prefs">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="/projects/peatflux/wiki">Wiki</a></li><li><a href="/projects/peatflux/timeline">Timeline</a></li><li><a href="/projects/peatflux/roadmap">Roadmap</a></li><li><a href="/projects/peatflux/query">View Tickets</a></li><li><a href="/projects/peatflux/newticket">New Ticket</a></li><li><a href="/projects/peatflux/search">Search</a></li><li class="last"><a href="/projects/peatflux/admin" title="Administration">Admin</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="last first"><a href="/projects/peatflux/wiki/PumpingSystemDesign">Back to PumpingSystemDesign</a></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="attachment">
+        <h1><a href="/projects/peatflux/wiki/PumpingSystemDesign">PumpingSystemDesign</a>: serial.CR8</h1>
+        <table id="info" summary="Description">
+          <tbody>
+            <tr>
+              <th scope="col">File serial.CR8,
+                <span title="1346 bytes">1.3 KB</span>
+                (added by acobb, <a class="timeline" href="/projects/peatflux/timeline?from=2011-09-03T16%3A33%3A11%2B08%3A00&amp;precision=second" title="2011-09-03T16:33:11+08:00 in Timeline">4 months</a> ago)</th>
+            </tr>
+            <tr>
+              <td class="message searchable">
+                <p>
+CR800 program for airflow electrical schematic v. 0.1.0
+</p>
+
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div id="preview" class="searchable">
+          
+  <table class="code"><thead><tr><th class="lineno" title="Line numbers">Line</th><th class="content"> </th></tr></thead><tbody><tr><th id="L1"><a href="#L1">1</a></th><td>'CR800 Series Datalogger</td></tr><tr><th id="L2"><a href="#L2">2</a></th><td>'To create a different opening program template, type in new</td></tr><tr><th id="L3"><a href="#L3">3</a></th><td>'instructions and select Template | Save as Default Template</td></tr><tr><th id="L4"><a href="#L4">4</a></th><td>'date:</td></tr><tr><th id="L5"><a href="#L5">5</a></th><td>'program author:</td></tr><tr><th id="L6"><a href="#L6">6</a></th><td></td></tr><tr><th id="L7"><a href="#L7">7</a></th><td>'Declare Public Variables</td></tr><tr><th id="L8"><a href="#L8">8</a></th><td>'Example:</td></tr><tr><th id="L9"><a href="#L9">9</a></th><td>Public PTemp, batt_volt</td></tr><tr><th id="L10"><a href="#L10">10</a></th><td>Public set_point 'M100 set point, 0-5 V</td></tr><tr><th id="L11"><a href="#L11">11</a></th><td>Public flow 'M100B flow output, 0-5 V</td></tr><tr><th id="L12"><a href="#L12">12</a></th><td>Public speed 'N838 speed, 0.5-2.6 V</td></tr><tr><th id="L13"><a href="#L13">13</a></th><td>Public tach 'N838 tachometer, 0.5-2.6V</td></tr><tr><th id="L14"><a href="#L14">14</a></th><td>Public Raw7000 As String * 100</td></tr><tr><th id="L15"><a href="#L15">15</a></th><td>Public NBytesReturned</td></tr><tr><th id="L16"><a href="#L16">16</a></th><td>Public SplitStrings(3) As String * 16</td></tr><tr><th id="L17"><a href="#L17">17</a></th><td></td></tr><tr><th id="L18"><a href="#L18">18</a></th><td>'Declare Other Variables</td></tr><tr><th id="L19"><a href="#L19">19</a></th><td>'Example:</td></tr><tr><th id="L20"><a href="#L20">20</a></th><td>'Dim Counter</td></tr><tr><th id="L21"><a href="#L21">21</a></th><td></td></tr><tr><th id="L22"><a href="#L22">22</a></th><td>'Declare Constants</td></tr><tr><th id="L23"><a href="#L23">23</a></th><td>'Example:</td></tr><tr><th id="L24"><a href="#L24">24</a></th><td>'CONST PI = 3.141592654</td></tr><tr><th id="L25"><a href="#L25">25</a></th><td></td></tr><tr><th id="L26"><a href="#L26">26</a></th><td>'Define Data Tables</td></tr><tr><th id="L27"><a href="#L27">27</a></th><td>DataTable (Test,1,-1)</td></tr><tr><th id="L28"><a href="#L28">28</a></th><td>        DataInterval (0,15,Sec,10)</td></tr><tr><th id="L29"><a href="#L29">29</a></th><td>        Minimum (1,batt_volt,FP2,0,False)</td></tr><tr><th id="L30"><a href="#L30">30</a></th><td>        Sample (1,PTemp,FP2)</td></tr><tr><th id="L31"><a href="#L31">31</a></th><td>EndTable</td></tr><tr><th id="L32"><a href="#L32">32</a></th><td></td></tr><tr><th id="L33"><a href="#L33">33</a></th><td>'Define Subroutines</td></tr><tr><th id="L34"><a href="#L34">34</a></th><td>'Sub</td></tr><tr><th id="L35"><a href="#L35">35</a></th><td>        'EnterSub instructions here</td></tr><tr><th id="L36"><a href="#L36">36</a></th><td>'EndSub</td></tr><tr><th id="L37"><a href="#L37">37</a></th><td></td></tr><tr><th id="L38"><a href="#L38">38</a></th><td>'Main Program</td></tr><tr><th id="L39"><a href="#L39">39</a></th><td>BeginProg</td></tr><tr><th id="L40"><a href="#L40">40</a></th><td>  SerialOpen (Com1,9600,0,0,10000)</td></tr><tr><th id="L41"><a href="#L41">41</a></th><td>        Scan (1,Sec,0,0)</td></tr><tr><th id="L42"><a href="#L42">42</a></th><td>                PanelTemp (PTemp,250)</td></tr><tr><th id="L43"><a href="#L43">43</a></th><td>                Battery (Batt_volt)</td></tr><tr><th id="L44"><a href="#L44">44</a></th><td>                SerialInRecord (Com1,Raw7000,0,30,&amp;h0A,NBytesReturned,01)</td></tr><tr><th id="L45"><a href="#L45">45</a></th><td>                SplitStr (SplitStrings(),Raw7000,CHR(9),3,2)</td></tr><tr><th id="L46"><a href="#L46">46</a></th><td>                VoltSe (set_point,1,mV5000,5,1,0,250,1.0,0)</td></tr><tr><th id="L47"><a href="#L47">47</a></th><td>                VoltSe (flow,1,mV5000,1,1,0,250,1.0,0)</td></tr><tr><th id="L48"><a href="#L48">48</a></th><td>                VoltSe (speed,1,mV5000,4,1,0,250,1.0,0)</td></tr><tr><th id="L49"><a href="#L49">49</a></th><td>                VoltSe (tach,1,mV5000,6,1,0,250,1.0,0)</td></tr><tr><th id="L50"><a href="#L50">50</a></th><td>                'Enter other measurement instructions</td></tr><tr><th id="L51"><a href="#L51">51</a></th><td>                'Call Output Tables</td></tr><tr><th id="L52"><a href="#L52">52</a></th><td>                'Example:</td></tr><tr><th id="L53"><a href="#L53">53</a></th><td>                CallTable Test</td></tr><tr><th id="L54"><a href="#L54">54</a></th><td>        NextScan</td></tr><tr><th id="L55"><a href="#L55">55</a></th><td>EndProg</td></tr><tr><th id="L56"><a href="#L56">56</a></th><td></td></tr></tbody></table>
+
+        </div>
+          <div class="buttons">
+            <form method="get" action="">
+              <div id="delete">
+                <input type="hidden" name="action" value="delete" />
+                <input type="submit" value="Delete attachment" />
+              </div>
+            </form>
+          </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="last first">
+          <a rel="nofollow" href="/projects/peatflux/raw-attachment/wiki/PumpingSystemDesign/serial.CR8">Original Format</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="/projects/peatflux/chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">Powered by <a href="/projects/peatflux/about"><strong>Trac 0.12.2</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.</p>
+      <p class="right">Visit the CENSAM project page at<br /><a href="http://censam.mit.edu/research/res5/index.html#sec2">http://censam.mit.edu/research/res5/index.html#sec2</a></p>
+    </div>
+  </body>
+</html>

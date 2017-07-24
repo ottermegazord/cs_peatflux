@@ -1,0 +1,55 @@
+'CR6 Series Datalogger
+
+'program author: ottermegazord
+
+'*** Constants ***
+Const SCAN_INTERVAL = 1 ' 1 Sec
+Const OUTPUT_INTERVAL = 10 ' 10 minutes
+
+'*** Port Assignments ***
+Const PAR_CH_1 = U1 ' SE Channel on CR6
+Const PAR_CH_2 = U3
+Const PAR_CH_3 = U5
+'Declare Public Variables
+Public PTemp, batt_volt
+Units batt_volt = V
+Units PTemp = C
+
+Public par_1 'Par Sensor (LI-190)
+Public par_2
+Public par_3
+
+'Declare Other Variables
+'Example:
+'Dim Counter
+
+'Define Data Tables.
+DataTable (Nursery_Spot,TRUE,-1) 'Set table size to # of records, or -1 to autoallocate.
+	CardOut(0,-1)
+  DataInterval (0,OUTPUT_INTERVAL,Sec,-1)
+	Minimum(1,batt_volt,FP2,False,False)
+	Average(1,PTemp,FP2,False)
+	Average(1,par_1,FP2,FALSE)
+	Average(1,par_2,FP2,FALSE)
+	Average(1,par_3,FP2,FALSE)
+EndTable
+
+'Define Subroutines
+'Sub
+	'EnterSub instructions here
+'EndSub
+
+'Main Program
+BeginProg
+	Scan(SCAN_INTERVAL,Sec,0,0)
+		PanelTemp(PTemp,250)
+		Battery(batt_volt)
+		VoltDiff(par_1,1,mV200,PAR_CH_1,True,0,50,1,0)
+		VoltDiff(par_2,1,mV200,PAR_CH_2,True,0,50,1,0)
+		VoltDiff(par_3,1,mV200,PAR_CH_3,True,0,50,1,0)
+		'Enter other measurement instructions
+		'Call Output Tables
+		CallTable Nursery_Spot
+	NextScan
+EndProg
+
